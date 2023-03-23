@@ -25,15 +25,27 @@ a:hover, a.active:hover {
     background-position: center;
     filter: blur(5px);
 }
+
+.main_page{
+    background-color: var(--color-white);
+    position: absolute;
+    height: 100vh;
+    top: 10%;
+    left: 10%;
+    width: 140vh;
+    height: 80vh;
+    border-radius: 10px;
+}
+
 .p_elements {
     font-family: var(--font-primary);
     background-color: var(--color-primary-dark);
-    color: aliceblue;
+    color: var(--color-white);
     filter: none;
     position: absolute;
     width: fit-content;
     height: fit-content;
-    top: 30%;
+    top: 10%;
     left: 45%; 
     justify-content: center;
 }
@@ -43,30 +55,72 @@ a:hover, a.active:hover {
     padding: 10px;
     position: absolute;
     top: 1%;
-    left: 39%;
+    left: 1%;
 }
 .p_text {
     font-family: var(--font-primary);
-    color: var(--color-white);
+    color: var(--color-primary-dark);
     position: absolute;
-    width: fit-content;
-    height: fit-content;
-    top: 30%;
-    left: 45%; 
-    justify-content: center;
+    /* width: fit-content;
+    height: fit-content; */
+    top: 3%;
+    left: 8%; 
 }
 .presentation{
     font-family: var(--font-primary);
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-primary);
     position: absolute;
     width: 300px;
-    height: fit-content;
-    top: 30%;
-    left: 33%;
+    height: 100px;
+    top: 10%;
+    left: 38%;
     display: flex;
     justify-content: center;
     border-radius: 10px;
     color: var(--color-white);
     border-style: solid;
-    
+    border-color: gray;
+    align-items: center;
+}
+.t_pInfo{
+    font-family: var(--font-primary);
+    background-color: var(--color-black);
+    color: var(--color-white);
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    top: 10%;
+    left: 66%;
+    display: none;
+    z-index: -1;
+    transition: width 2s;
+    border-radius: 10px;
+    justify-content: center;
+}
+.presentation:hover + .t_pInfo{
+    display: flex;
+}
+
+.project_inf{
+    font-family: var(--font-primary);
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 50%;
+    height: 40%;
+    background-color: var(--color-medium-grey);
+    color: var(--color-primary-dark);
+    border-radius: 10px;
+}
+
+.business{
+    font-family: var(--font-primary);
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 60%;
+    height: 70%;
+    background-color: var(--color-medium-grey);
+    color: var(--color-primary-dark);
+    border-radius: 10px;
 }
