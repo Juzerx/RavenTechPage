@@ -1,0 +1,24 @@
+.title_alt_color {
+    color: var(--color-primary);
+    animation:  1s ease-out 0s 1 slidedown;
+    
+}
+@keyframes slidedown {
+    0% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    
+}
+.title {
+    animation:  1s ease-out 0s 1 slidedown;
+}
+
+.subtitle_container {
+    background-color: var(--color-dark-grey);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 7vh 20vh;
+}

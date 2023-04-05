@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Styles/main.css">
     <link rel="icon" href="./assets/Images/favicon.png" type="image/icon type">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
     <title>RavenTechPage</title>
 </head>
 
@@ -14,44 +15,30 @@
     <header>
 
         <nav>
-            <a class="active" href="#">Inicio</a>
-            <a href="about.html">Sobre nosotros</a>
-            <a href="contact.html">Contacto</a>
-            <a href="Game.html">Juego</a>
-
-        </nav>
-
-
-        <div class="background"></div>
-        <section class="main_page">
-            <div class="principal">
-                <img class="logo" src="./assets/Images/favicon.png" alt="">
-                <h1 class="p_text">RavenTech</h1>
-                <section class="basic_i">
-                    <div class="presentation" id="presentation">
-                        <center>
-                            <div class="t_pres">
-                                <h2>Bienvenidos!</h2>
-                                <hr style="width: 10rem;">
-                                <h6> ponga su mouse aqui</h6>
-                            </div>
-
-                    </div>
-                    <div class="t_pInfo">
-                        <h3> Esta es la pagina oficial de RavenTech</h3><br>
-                        <h6>Aqui podras conocer nuestros proyectos y empresa</h6>
-
-                    </div>
-                    </center>
-                    <div class="project_inf">
-                        <h2>Proyectos en camino:</h2>
-                        <h3>Juego (por ahora 2d) el cual va a enseñar las basicas de la programacion de software</h3>
-                    </div>
-                    </h2>
-                </section>
+            <a id="button_red" class="r_nav" href="Game.html">Juego</i></a>
+            <a class="r_nav" href="#">Raven Tech</a>
+            <div class="dropdown">
+            <h2 id="boton_nav_desplegable" class='r_nav' href="about.html">empresa<i class="ri-arrow-down-s-line"></i></h2>
+            <div class="dropdown-content">
+                <a href="about.html">sobre nosotros</a>
+              </div>
             </div>
-        </section>
+
+        </nav> 
     </header>
+        <section class="main_section">
+            <div class="presentacion">
+                <h1 class="title">Presentamos <h1 class="title_alt_color">RavenLearn</h1></h1>
+                <div class="subtitle_container">
+                    <center>
+                    <h2 class="subtitle">Juego el cual reforzara los conocimientos en programacion de las personas interesadas en el tema o si eres principiante podras aprender los fundamentos de la programacion y como ejercerlos </h2>
+                </center>
+                </div>
+                <a class="button_down" href="game.html" id="button_red">Prueba el juego en el navegador</a>
+            </div>
+            
+        </section>
+    
 </body>
 <script src="./JS/index.js"></script>
 
