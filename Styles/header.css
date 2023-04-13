@@ -4,6 +4,7 @@ nav {
     height: 10px;
 }
 a {
+    animation: 1s ease-out 0s 1 slidedown;
     text-decoration: none;
     color: var(--color-white);
     margin: 5px;
@@ -22,6 +23,7 @@ a {
     color: var(--color-medium-grey);
 }
 #boton_nav_desplegable {
+    animation: 1s ease-out 0s 1s;
     font-size: 1.5rem;
     color: var(--color-white);
     cursor: pointer;

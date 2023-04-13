@@ -9,7 +9,10 @@
     --color-white: #ffffff;
     --color-medium-grey: #757575;
     --color-dark-grey: #212121;
+    --color-light-grey: #b4b4b4;
+
     /* fonts */
+
     --font-primary: 'Poppins', sans-serif;
  
     --font-secondary: 'Source Sans Pro', sans-serif;

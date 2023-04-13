@@ -6,7 +6,7 @@ class Player extends Sprite {
             x: 0,
             y: 1,
         }
-        this.collisionBlocks = collisionBlocks;
+        this.collisionBlocks = CollisionBlocks;
         this.hitbox = {
             position: {
                 x: this.position.x,
@@ -17,16 +17,18 @@ class Player extends Sprite {
         }
         
         this.animations = animations;
-
+        console.log (this.animations);
         for (let key in this.animations) {
             let image = new Image();
             imageSrc = this.animations[key].image;
+            console.log (imageSrc);
             this.animations[key].image = image;
         }
     }
 
     switchSprite(key) {
         if (this.image === this.animations[key].image)return this.image = this.animations[key].image;
+        console.log (this.switchSprite);
     }
 
     update() {
