@@ -51,15 +51,15 @@ const player = new Player({
         x: 100,
         y: 300,
     },
-    imageSrc: "../assets/Images/warrior/Idle.png",
+    imageSrc: "assets/Images/warrior/Idle.png",
     framerate: 8,
     animations: {
         Idle: {
-            imageSrc: "../assets/Images/warrior/Idle.png",
+            imageSrc: "assets/Images/warrior/Idle.png",
             framerate: 8,
         },
         Run: {
-            imagesrc: "../assets/Images/warrior/Run.png",
+            imagesrc: "assets/Images/warrior/Run.png",
             framerate: 8,
         } 
     }
