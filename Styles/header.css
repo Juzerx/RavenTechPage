@@ -72,3 +72,32 @@ body {
     text-align: center;
     margin: 50px;
 }
+.ri-list-check{
+    display: none;
+}
+#ola {
+    text-align: center;
+    font-family: var(--font-secondary);
+}
+@media only screen and (max-width: 768px) {
+    nav {
+        background-color: var(--color-primary);
+        height: 40px;
+    }
+    .r_nav {
+        float: none;
+    }
+    #button_red {
+        display: none;
+    }
+    #boton_nav_desplegable {
+        display: none;
+    }
+    .ri-list-check {
+        display: inline;
+        float: right;
+        align-items: center;
+        margin: 5px;
+        color: var(--color-white);
+    }
+}
