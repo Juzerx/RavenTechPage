@@ -43,3 +43,8 @@
 .social_links {
     font-size: 2rem;
 }
+#ola {
+    position: relative;
+    width: fit-content;
+    background-color: var(--color-dark-grey);
+}
