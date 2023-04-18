@@ -6,16 +6,22 @@ function nav_menu() {
 }
 
 let w_counter = 0;
-const interval = setInterval(change_w , 4000, w_counter++);
-function change_w (w_counter) {
-    switch (w_counter) {
+AutoType ("ola", "es una forma de estudio")
+setInterval(() => {
+switch (w_counter) {
         case 0:
-            AutoType("ola", "welcome");
-            AutoBackspace("ola", 20);
-            console.log(w_counter);
+            AutoBackspace("ola", 50, () => {AutoType("ola", "es una herramienta");}); break;
         case 1:
-            AutoType("ola", "how i can help u?");
-            AutoBackspace("ola", 50);
-            console.log(w_counter);
+            AutoBackspace("ola", 50, () => {AutoType("ola", "es un motor");}); break;
+        case 2:
+            AutoBackspace("ola", 50, () => {AutoType("ola", "es una tecnologia");}); break;
+        case 3:
+            AutoBackspace("ola", 50, () => {AutoType("ola", "es un metodo de enseñansa");}); break;
+        case 4:
+            AutoBackspace("ola", 50, () => {AutoType("ola", "es entretenido");}); break;
+        case 5:
+            AutoBackspace("ola", 50, () => {AutoType("ola", "es un motor");}); break;
     }
-}
+    if (w_counter < 10) w_counter++;
+    if (w_counter == 10) w_counter = 0;
+} , 5000);

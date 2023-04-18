@@ -31,32 +31,15 @@
     width: 50%;
     animation: 1s ease-out 0s 1 slidedown;
 }
-.logo{
-    display: inline-flex;
-    background-color: var(--color-medium-grey);
-    padding: 8px;
+.social_media {
+    background-color: var(--color-black);
+    border-radius: 10px;
+    padding: 16px;
     margin-top: 4rem;
     margin-left: 2rem;
-    width: 50%;
-    height: 50%;
+    width: 20%;
     animation: 1s ease-out 0s 1 slidedown;
-    border-radius: 10px;
 }
-.logo_img{
-    background-image: url(../assets/Images/favicon.png);
-    width: 50%;
-    background-position: center;
-    background-size: cover;
+.social_links {
+    font-size: 2rem;
 }
-.logo_txt{
-    display: none;
-}
-.logo_img:hover{
-    filter: blur(5px);
-}
-.logo_img:hover + .logo_txt{
-    display: block;
-    color: var(--color-white);
-    font-size: 1.2rem;
-    font-family: var(--font-primary);
-    animation: 1s ease-out 0s 1 slidedown;}
