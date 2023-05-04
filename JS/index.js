@@ -1,10 +1,11 @@
-
-function nav_menu() {
-    document.getElementById("nav").styles.display = "none";
+function right_menu () {
+    // menu = document.getElementsByClassName(right_n);
+    const button = document.getElementById("menu_button");
+    const menu = document.getElementById("right_n");
     
-    console.log("clicked");
+    menu.style.display = "block";
+    button.style.display = "none";
 }
-
 let w_counter = 0;
 AutoType ("ola", "es una forma de estudio")
 setInterval(() => {

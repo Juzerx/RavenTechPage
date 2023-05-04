@@ -60,10 +60,7 @@ a {
 a:hover, a.active:hover {
     color: var(--color-primary);
 }
-body {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(54,8,8,1) 100%);
-}
+
 .main_section {
     font-family: var(--font-primary);
     color: var(--color-white);
@@ -79,6 +76,7 @@ body {
     text-align: center;
     font-family: var(--font-secondary);
 }
+
 @media only screen and (max-width: 768px) {
     nav {
         background-color: var(--color-primary);
@@ -94,6 +92,7 @@ body {
         display: none;
     }
     .ri-list-check {
+        cursor: pointer;
         display: inline;
         float: right;
         align-items: center;
