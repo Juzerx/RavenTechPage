@@ -1,6 +1,6 @@
 .about_memberships {
     margin: 5% 0;
-    height: 70vh;
+    height: fit-content;
     width: 80%;
     background-color: var(--color-white);
     border-radius: 10px;
@@ -45,5 +45,14 @@ table {
   }
   .payment_student {
     background-color: var(--color-member-student);
-
+  }
+  @media only screen and (max-width: 768px) {
+    .about_memberships {
+      width: 100%;
+      margin: 15% 0;
+      border-radius: 0px;
+    }
+    th, tr {
+      font-size: 0.8rem;
+    }
   }

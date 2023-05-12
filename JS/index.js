@@ -18,8 +18,12 @@ function close_menu () {
     
     
 }
+
+// autotype
+let OnPage = true;
 let w_counter = 0;
 AutoType ("ola", "es una forma de estudio")
+if (OnPage == true) {
 setInterval(() => {
 switch (w_counter) {
         case 0:
@@ -48,3 +52,7 @@ switch (w_counter) {
     if (w_counter < 10) w_counter++;
     if (w_counter == 10) w_counter = 0;
 } , 5000);
+}
+document.addEventListener ('visibilitychange', function() {
+    OnPage = !document.hidden;
+})

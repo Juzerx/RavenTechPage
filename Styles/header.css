@@ -11,16 +11,7 @@ a {
 }
 .r_nav{
     float: right;
-}
-#button_red {
-    font-size: 1.2rem;
-    padding: 2px;
-    border-radius: 5px;
-    background-color: var(--color-primary-light);
-}
-#button_red:hover {
-    background-color: var(--color-primary-dark);
-    color: var(--color-medium-grey);
+    margin: 5px 10px;
 }
 #boton_nav_desplegable {
     animation: 1s ease-out 0s 1s;
@@ -74,6 +65,9 @@ a:hover, a.active:hover {
 .ri-list-check{
     display: none;
 }
+#menu_button {
+    display: none;
+}
 #ola {
     text-align: center;
     font-family: var(--font-secondary);
@@ -86,6 +80,7 @@ a:hover, a.active:hover {
         position: fixed;
         top: 0;
         width: 100%;
+        z-index: 1;
     }
     .r_nav {
         float: none;

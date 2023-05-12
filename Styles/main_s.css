@@ -76,14 +76,29 @@
     width: fit-content;
     margin: 3% 0;
 }
-.footage_img {
-    background-image: url(../assets/Images/wallpaper.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 50%;
-    height: 50vh;
-    align-self: center;
-    border-radius: 10px;
+.gallery_container {
+    width: 60%;
+    height: 40vh;
+    
+}
+.image_gallery {
+    display: flex;
+    width: 600;
+    height: 400;
+    box-shadow: 0px 10px 20px var(--color-black);
+}
+.image_gallery img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+.image_gallery img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
 }
 .darker {
     display: none;
@@ -111,6 +126,7 @@
     border-radius: 10px;
     overflow-y: auto;
     overflow: overlay;
+    box-shadow: 0px 10px 20px var(--color-black);
 }
 .free_img {
     background-image: url(../assets/Images/memberships/free.png);
@@ -151,18 +167,22 @@
     }
 }
 @media only screen and (max-width: 768px) {
-    
+    #menu_button {
+        margin-right: 2%;
+        display: block;
+    }
     .subtitle_container {
         margin: 7vh 10%
     }
     #right_n {
         display: none;
-        position: absolute;
+        position: fixed;
         top: 0;
-        left: 30%;
-        width: 75%;
+        right: 0;
+        width: 25%;
         height: 100%;
-        background-color: var(--color-secundary-dark-translucident);
+        background-color: var(--color-secondary-dark-translucident);
+        font-family: var(--font-secondary);
         animation:  1s ease-out 0s 1 slideright;
         animation-fill-mode: forwards ;
     }
@@ -173,12 +193,38 @@
         height: 100%;
         width: 100%;
     }
+    #right_n a{
+        font-size: 3.4vh;
+        margin: 20% 0;
+    }
     .ri-arrow-right-s-line{
+        cursor: pointer;
         display: block;
-        color: var(--color-secundary);
+        color: var(--color-secondary);
+        margin: 30% 0;
     }
     .title_menu {
         width: fit-content;
-        margin: 1px;
+        margin: 20% 0%;
+        color: var(--color-secondary)
+    }
+    .memberships_container {
+      width: 100%;
+      flex-direction: column;
+      height: fit-content;
+      justify-items: center;
+      border-radius: 0;
+    }
+    .membership_info {
+      width: 80%;
+      margin: 5% 10%;
+      padding: 3% 0;
+    }
+    .free_img, .basic_img, .premium_img, .student_img {
+      height: 12vh;
+      width: 12vh;
+    }
+    .footage_img {
+      width: 80%;
     }
 }
