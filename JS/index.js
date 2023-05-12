@@ -3,8 +3,20 @@ function right_menu () {
     const button = document.getElementById("menu_button");
     const menu = document.getElementById("right_n");
     
-    menu.style.display = "block";
+        menu.style.display = "block";
     button.style.display = "none";
+    
+}
+function close_menu () {
+    const menu = document.getElementById("right_n");
+    const button = document.getElementById("menu_button");
+
+    menu.classList.add ('right_n')
+
+        menu.style.display = "none";
+        button.style.display = "block";
+    
+    
 }
 let w_counter = 0;
 AutoType ("ola", "es una forma de estudio")
@@ -17,7 +29,7 @@ switch (w_counter) {
         case 2:
             AutoBackspace("ola", 50, () => {AutoType("ola", "es una tecnologia");}); break;
         case 3:
-            AutoBackspace("ola", 50, () => {AutoType("ola", "es un metodo de enseñansa");}); break;
+            AutoBackspace("ola", 50, () => {AutoType("ola", "es un metodo de enseñanza");}); break;
         case 4:
             AutoBackspace("ola", 50, () => {AutoType("ola", "es entretenido");}); break;
         case 5:
