@@ -113,7 +113,7 @@
     overflow: overlay;
 }
 .free_img {
-    background-image: url(/assets/Images/memberships/free.png);
+    background-image: url(../assets/Images/memberships/free.png);
 
 }
 .basic_img {
