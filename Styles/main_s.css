@@ -245,6 +245,20 @@ main {
     .subtitle_container {
         margin: 7vh 10%
     }
+    .gallery_container {
+        width: 60%;
+        height: 40vh;
+    }
+    .image_gallery {
+        display: flex;
+        aspect-ratio: 10/16;
+        width: 300px;
+        position: relative;
+        overflow: scroll;
+        scroll-snap-type: x mandatory;
+        box-shadow: 0px 10px 20px var(--color-black);
+        margin: 12% 0;
+    }
     #right_n {
         display: none;
         position: fixed;
