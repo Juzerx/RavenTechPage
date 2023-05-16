@@ -16,7 +16,10 @@
 
     /* member colors */
     --color-member-basic: #500a6b;
+    --color-member-basic-light: #8f3caf;
+    --color-member-premium-light: #ad8821;
     --color-member-premium: #836410;
+    --color-member-student-light: #5390e0;
     --color-member-student: #1b66c9;
 
     /* fonts */
