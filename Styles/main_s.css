@@ -94,14 +94,14 @@
 .gallery_container {
     width: 60%;
     height: 40vh;
-
+    overflow: hidden;
+    box-shadow: 0px 10px 20px var(--color-black);
 }
 
 .image_gallery {
     display: flex;
     width: 600;
     height: 400;
-    box-shadow: 0px 10px 20px var(--color-black);
 }
 
 .image_gallery img {
@@ -310,31 +310,29 @@ main {
 
     .gallery_container {
         width: 60%;
-        height: 40vh;
+        height: 30vh;
     }
 
     .image_gallery {
-        display: flex;
-        aspect-ratio: 10/16;
-        width: 300px;
-        position: relative;
-        overflow: scroll;
-        scroll-snap-type: x mandatory;
-        box-shadow: 0px 10px 20px var(--color-black);
-        margin: 12% 0;
+        width: 100%;
+        height: 30vh;
     }
 
+    .image_gallery img:hover {
+        width: 200px;
+    }
     #right_n {
         display: none;
         position: fixed;
         top: 0;
         right: 0;
-        width: 25%;
+        width: 44%;
         height: 100%;
         background-color: var(--color-secondary-dark-translucident);
         font-family: var(--font-secondary);
         animation: 1s ease-out 0s 1 slideright;
         animation-fill-mode: forwards;
+        z-index: 2;
     }
 
     .darker {
@@ -348,13 +346,13 @@ main {
     #right_n a {
         font-size: 3.4vh;
         margin: 20% 0;
+        padding: 10%;
     }
 
     .ri-arrow-right-s-line {
         cursor: pointer;
         display: block;
         color: var(--color-secondary);
-        margin: 30% 0;
     }
 
     .title_menu {
@@ -375,6 +373,7 @@ main {
         width: 80%;
         margin: 5% 10%;
         padding: 3% 0;
+        overflow: visible;
     }
 
     .free_img,
