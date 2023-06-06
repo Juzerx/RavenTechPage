@@ -30,6 +30,21 @@ table {
   tbody tr:nth-child(even) {
     background-color: #f9f9f9;
   }
+  #free_column {
+    background-color: var(--color-medium-grey);
+  }
+  #free_column_light {
+    background-color: var(--color-light-grey);
+  }
+  .basic_column_light {
+    background-color: var(--color-member-basic-light);
+  }
+  .premium_column_light {
+    background-color: var(--color-member-premium-light);
+  }
+  .student_column_light {
+    background-color: var(--color-member-student-light);
+  }
   .members_r {
     font-family: var(--font-secondary);
     color: var(--color-secondary);
