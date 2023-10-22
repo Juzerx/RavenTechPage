@@ -1,9 +1,3 @@
-.title_alt_color {
-    color: var(--color-primary);
-    animation: 1s ease-out 0s 1 slidedown;
-
-}
-
 @keyframes slidedown {
     0% {
         transform: translateY(-100%);
@@ -41,23 +35,44 @@
     }
 
     100% {
-        opacity: 100;
+        opacity: 1;
     }
 }
 
 .title {
+    font-size: 3rem;
     animation: 1s ease-out 0s 1 slidedown;
+    text-shadow: 0px 5px 10px var(--color-black);
+    position: absolute;
+    top: 30%;
+    right: 5%;
 }
-
-.subtitle_container {
+hr {
+    border: 1px solid var(--color-secondary);
+    box-shadow: 0px 10px 20px var(--color-black);
+}
+.presentation_container {
+    position: relative;
+    width: 100;
+    height: fit-content;
+    background-color: var(--color-black)    ;
+    padding: 2% 0;
+}
+.presentation_txt {
+    top: 0;
+    display: inline-block;
+    position: absolute;
+    text-align: -webkit-center;
+    width: 100%;
+    height: 100%;
     background-color: var(--color-dark-grey);
-    border-radius: 10px;
-    padding: 30px;
-    margin: 7vh 20vh;
+    z-index: 1;
+    clip-path: polygon(75% 0, 100% 0%, 100% 100%, 88% 100%, 64% 37%);
+    animation: 1s ease-out 0s 1 opacity;
+    border: solid 3px var(--color-primary);
 }
-
 .about_us {
-    background-color: var(--color-dark-grey);
+    background-color: var(--color-medium-grey);
     border-radius: 10px;
     padding: 16px;
     margin-top: 4rem;
@@ -85,25 +100,102 @@
     width: 80%;
     border-radius: 10px;
 }
+.autotype_container {
+    position: absolute;
+    height: 10%;
+    width: 20%;
+    top: 50%;
+    right: 2%;
+}
 
 #ola {
     width: fit-content;
     margin: 3% 0;
+    text-shadow: 0px 5px 10px var(--color-black);
+    text-align: right;
 }
 
 #gameLoader {
+    top: 50%;
+    left: 50%;
+    display: inline-block;
     background-color: var(--color-secondary);
     border-radius: 10px;
-    width: fit-content;
+    width: 20%;
     padding: 5px;
-    margin: 50vh;
+    box-shadow: 0px 10px 20px var(--color-black);
+    z-index: 1;
 }
+#gameLoader:hover {
+    background-color: var(--color-black);
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
+    box-shadow: 0px 10px 20px var(--color-secondary);
+    transition: all 1s ease-in;
+}
+.game_info {
+    background-color: var(--color-totally-black);
+}
+.carrusel {
+    text-align: center; /* Centramos horizontalmente */
+    width: 78%;
+    aspect-ratio: 3/2;
+    position: relative;
+    opacity: 1;
+    left: -7%;
+}
+
+#carrusel_slider {
+    height: 100%;
+    width: 86%;
+    position: relative;
+}
+
+/* Agregamos estilos para el contenedor de la imagen */
+.image-container {
+    text-align: -webkit-center;
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: opacity 1s ease-in-out;
+}
+
+.image-container.active {
+    display: block; /* Mostramos solo el contenedor activo (imagen actual) */
+}
+.image-container img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-width: fit-content;
+    position: absolute;
+    left: 30%;
+    animation: opacity 1s ease-in-out; 
+}
+.ri-arrow-drop-left-line, .ri-arrow-drop-right-line{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+.ri-arrow-drop-right-line {
+    right: 10%;
+}
+.ri-arrow-drop-left-line {
+    left: 10%;
+}
+
 .gallery_container {
-    width: 60%;
-    height: 40vh;
+    width: 100%;
+    height: fit-content;
     overflow: hidden;
     box-shadow: 0px 10px 20px var(--color-black);
-    margin: 2rem;
 }
 
 .image_gallery {
@@ -143,13 +235,17 @@
     display: inline-flex;
     background-color: var(--color-dark-grey);
     width: 70%;
-    height: 40vh;
+    height: 50vh;
     border-radius: 10px;
     margin-bottom: 10%;
     box-shadow: 0px 10px 20px var(--color-black);
+    
 }
 
 .membership_info {
+    font-family: var(--font-secondary);
+    font-size: 1.2rem;
+    text-align: -webkit-center;
     background-color: var(--color-medium-grey);
     width: 30%;
     height: 90%;
@@ -157,9 +253,24 @@
     border-radius: 10px;
     overflow-y: auto;
     overflow: overlay;
-    box-shadow: 0px 10px 20px var(--color-black);
+    overflow-x:hidden;
+    position: relative;
+    box-shadow: 0px 10px 20px var(--color-black); 
 }
-
+.membership_info a {
+    position: absolute;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    padding: 1%;
+    text-shadow: 0px 5px 10px var(--color-black);
+    top: 80%;
+    right: 10%;
+    left: 10%;
+}
+.membership_info a:hover {
+    color: var(--color-light-grey);
+    background-color: var(--color-primary-dark);
+}
 .free_img {
     background-image: url(../assets/Images/memberships/free.png);
 
@@ -189,6 +300,7 @@
 
 .memberships_title {
     margin: 5% 0;
+    text-shadow: 0px 5px 10px var(--color-black);
 }
 
 #basic {
@@ -200,32 +312,29 @@
     background-color: var(--color-member-premium);
 }
 
+.membership_info h4 {
+    border-radius: 10px;
+    height: 59%;
+}
+
 #student {
     background-color: var(--color-member-student);
 }
 
 #free h4 {
     background-color: var(--color-light-grey);
-    margin: 1% 5%;
-    border-radius: 10px;
 }
 
 #basic h4 {
     background-color: var(--color-member-basic-light);
-    margin: 1% 5%;
-    border-radius: 10px;
 }
 
 #premium h4 {
     background-color: var(--color-member-premium-light);
-    margin: 1% 5%;
-    border-radius: 10px;
 }
 
 #student h4 {
     background-color: var(--color-member-student-light);
-    margin: 1% 5%;
-    border-radius: 10px;
 }
 
 main {
@@ -302,11 +411,28 @@ main {
 
 @media only screen and (max-width: 900px) {
     .memberships_container {
-        width: 90%;
-    }
+        width: 90;
 }
-
+.membership_info {
+    height: 100%;
+}
+.membership_info h4 {
+    width: 80%;
+}
+.title {
+    font-size: 1.7rem;
+}
+#ola {
+    font-size: 0.95rem;
+}
+}
 @media only screen and (max-width: 768px) {
+    .title {
+        font-size: 1rem;
+    }
+    #ola {
+        font-size: 0.5rem;
+    }
     #menu_button {
         margin-right: 2%;
         display: block;
@@ -317,7 +443,6 @@ main {
     }
 
     .gallery_container {
-        width: 60%;
         height: 30vh;
     }
 
@@ -383,7 +508,9 @@ main {
         padding: 3% 0;
         overflow: visible;
     }
-
+    .membership_info a{
+        text-align: -webkit-center;
+    }
     .free_img,
     .basic_img,
     .premium_img,

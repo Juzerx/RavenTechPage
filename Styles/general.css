@@ -2,21 +2,29 @@ body {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(54,8,8,1) 100%);
     scrollbar-gutter: stable;
-    overflow: overlay;
+    overflow: auto;
+}
+.body::-webkit-scrollbar{
+  display: none;
+}
+.body.body-show::-webkit-scrollbar {
+  display: block;
 }
 *::-webkit-scrollbar {
     width: 10px;
   }
 
   *::-webkit-scrollbar-track {
-    background: #242323c9;
+    
+    background: rgba(36, 35, 35, 0.603);
     display: none;
   }
 
+
  *::-webkit-scrollbar-thumb {
-    background-color: #00000073;
-    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 11px;
   }
   *::-webkit-scrollbar-track-piece {
-    background: #2423231c;
+    background: rgba(36, 35, 35, 0.11);
   }
